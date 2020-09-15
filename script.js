@@ -27,7 +27,7 @@ main()
 
 
 function printInit(){
-    let html = `<img src=${imageURL} class='current-image'>`
+    let html = `<img src=${pics[0]} class='current-image'>`
 
     imgContainer.innerHTML = html
 }
@@ -45,7 +45,7 @@ function generateButtons(){
 
 function generateStock(){
     let html=""
-    pics2.forEach(p=>{
+    pics.forEach(p=>{
         html += `<img onclick=addPic('${p}') src=${p} class='thumbnail' alt='image'/>`
     })
 
