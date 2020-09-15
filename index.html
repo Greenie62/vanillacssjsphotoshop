@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vanilla JS PhotoShop 🌄 </title>
+</head>
+<body>
+  
+    <div class="app">
+        <div class="pictureinputrow">
+            <div class="formDiv">
+                <label for="photoinput">Photo:</label>
+            <input type="text" name="photoinput" id="photoinput" placeholder="paste your image url">
+            <small class='text-caption'>Paste a image url</small>
+            </div>
+            <div class="buttonDiv">
+            <button class='enterPicBtn btn'>Enter</button>
+            <button class='viewStockBtn btn'>Default</button>
+            
+            </div>
+
+          
+
+        </div>
+
+        <div class="thumbContainer">
+            <p>Stock Images</p>
+        </div>
+        <div class="canvas">
+            <div class="imgcontainer"></div>
+        </div>
+        <div class="sidebar"></div>
+     
+        <div class="sliderContainer">
+            <h3 class='sliderh3'>Change the <span class='currentoption'></span></h3>
+            <div class="sliderCard">
+                <small class="caption">Min</small>
+                <input type="range" min="0" max="100" id="range" name="range" class="rangeinput">
+                <small class="caption">Max</small>
+            </div>
+        </div>
+    </div>
+
+    <script src="buttons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
